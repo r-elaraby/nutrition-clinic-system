@@ -1,0 +1,13 @@
+﻿CREATE TABLE [dbo].[doctor] (
+    [doctor_id]         INT           IDENTITY (1, 1) NOT NULL,
+    [doctor_name]       NVARCHAR (50) NOT NULL,
+    [doctor_address]    NCHAR (10)    NOT NULL,
+    [doctor_phone]      NVARCHAR (50) NOT NULL,
+    [doctor_age]        INT           NOT NULL,
+    [doctor_gender]     NVARCHAR (50) NOT NULL,
+    [doctor_email]      NVARCHAR (50) NOT NULL,
+    [doctor_experience] NVARCHAR (50) NOT NULL,
+    [doctor_img]        IMAGE         NULL,
+    CONSTRAINT [PK_doctor] PRIMARY KEY CLUSTERED ([doctor_id] ASC)
+);
+
